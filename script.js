@@ -1,6 +1,6 @@
 function dis(val) {
     const display = document.getElementById('result');
-    display.value += "     " + val;
+    display.value += val;
 }
 
 function solve() {
