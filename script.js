@@ -22,7 +22,7 @@ function solve() {
     display.value = y;
 }
 
-function del() {
+function AC() {
     const display = document.getElementById('result');
     display.value = '';
 }
@@ -64,7 +64,7 @@ function x9() {
 
 function sin() {
     const display = document.getElementById('result');
-    display.value = Math.sin(display.value);
+    display.value = Math.sin(display.value * (Math.PI / 180));
 }
 
 function sinh() {
@@ -84,12 +84,42 @@ function asinh() {
 
 function cos() {
     const display = document.getElementById('result');
-    display.value = Math.cos(display.value);
+    display.value = Math.cos(display.value * (Math.PI / 180));
 }
 
 function cosh() {
     const display = document.getElementById('result');
     display.value = Math.cosh(display.value);
+}
+
+function acos() {
+    const display = document.getElementById('result');
+    display.value = Math.acos(display.value);
+}
+
+function acosh() {
+    const display = document.getElementById('result');
+    display.value = Math.acosh(display.value);
+}
+
+function tan() {
+    const display = document.getElementById('result');
+    display.value = Math.tan(display.value * (Math.PI / 180));
+}
+
+function tanh() {
+    const display = document.getElementById('result');
+    display.value = Math.tanh(display.value);
+}
+
+function atan() {
+    const display = document.getElementById('result');
+    display.value = Math.atan(display.value);
+}
+
+function atanh() {
+    const display = document.getElementById('result');
+    display.value = Math.atanh(display.value);
 }
 
 
