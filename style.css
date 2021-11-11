@@ -2,6 +2,12 @@
     text-color: #39FF14;
 */
 
+body {
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(20deg, rgb(56, 3, 52) 10%, rgb(37, 8, 30) 50%);
+}
+
 .main-box {
     width: 25%;
     box-shadow: 0 0 5px grey, inset 0 0 10px black;
@@ -100,15 +106,15 @@
 }
 
 .main-box>.box-one>.box-one-top>#box-one-bottom>button {
-    width: 100px;
-    height: 25px;
+    width: 80px;
+    margin-top: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 33px;
     margin-left: 2px;
-    margin-top: 6px;
+    background-color: black;
     outline: none;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background: rgb(97, 44, 0);
-    color: rgb(145, 255, 0);
+    color: #39FF14;
 }
 
 .main-box>.box-one>.box-one-top>#box-one-bottom>button:hover {
@@ -138,4 +144,10 @@
     margin-top: 5px;
     box-shadow: 0 0 8px black;
     border: none;
+}
+
+@media(max-width:830px) {
+    .main-box {
+        width: 100%;
+    }
 }

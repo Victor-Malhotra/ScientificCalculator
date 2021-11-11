@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
     <title>Scinetific Calculator</title>
     <link rel="icon" href="logo.ico" type="image/x-icon" />
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -25,13 +25,16 @@
                 </div>
                 <div id="bspaceclick">
                     <span id="box-one-bottom">
-            <button>CONST</button>
-            <button>cotx</button>
-            <button>acot</button>
-            <button>ON</button>
+           
           </span>
             </article>
             <div class="box-two">
+                <span>
+                <button onclick="sqrt()">2<sub>&#8730;X</sub></button>
+                <button onclick="cuberut()">3<sub>&#8730; X</sub></button>
+                <button onclick="fourrut()">4<sub>&#8730; X</sub></button>
+                <button onclick="fiverut()">5<sub>&#8730; X</sub></button>
+              </span>
                 <span>
             <small>x<sup>2</sup></small>
             <small>x<sup>3</sup></small>
@@ -53,16 +56,16 @@
             <small>log</small>
             <small>In</small>
             <small>e</small>
-            <small>cot</small>
-            <small>cotx</small>
+            <small onclick="cot()">cot</small>
+            <small onclick="coth()">coth</small>
           </span>
                 <span>
             <button onclick="x9()">x<sup>9</sup></button>
-            <button>Log</button>
-            <button>In</button>
+            <button onclick="log()">Log</button>
+            <button onclick="ln()">In</button>
             <button>e</button>
-            <button>cot</button>
-            <button>cotx</button>
+            <button onclick="cot()">cot</button>
+            <button onclick="coth()">coth</button>
           </span>
                 <span>
             <small onclick="asinh()">asinh</small>
@@ -109,7 +112,7 @@
             <button onclick="dis('7')">7</button>
             <button onclick="dis('8')">8</button>
             <button onclick="dis('9')">9</button>
-            <button onclick="">DEL</button>
+            <button onclick="del()">DEL</button>
             <button onclick="AC()">AC</button>
           </span>
                 <span>

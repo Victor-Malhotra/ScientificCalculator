@@ -27,6 +27,11 @@ function AC() {
     display.value = '';
 }
 
+function del() {
+    const display = document.getElementById('result');
+    display.value = display.value.slice(0, -1);
+}
+
 function x2() {
     const display = document.getElementById('result');
     display.value = Math.pow(display.value, 2);
@@ -122,6 +127,45 @@ function atanh() {
     display.value = Math.atanh(display.value);
 }
 
+function cot() {
+    const display = document.getElementById('result');
+    display.value = 1 / Math.tan(display.value * (Math.PI / 180));
+}
+
+function coth() {
+    const display = document.getElementById('result');
+    display.value = 1 / Math.tanh(display.value);
+}
+
+function log() {
+    const display = document.getElementById('result');
+    display.value = Math.log10(display.value);
+}
+
+function ln() {
+    const display = document.getElementById('result');
+    display.value = Math.log(display.value);
+}
+
+function sqrt() {
+    const display = document.getElementById('result');
+    display.value = Math.sqrt(display.value);
+}
+
+function cuberut() {
+    const display = document.getElementById('result');
+    display.value = Math.cbrt(display.value)
+}
+
+function fourrut() {
+    const display = document.getElementById('result');
+    display.value = Math.pow(display.value, 1 / 4)
+}
+
+function fiverut() {
+    const display = document.getElementById('result');
+    display.value = Math.pow(display.value, 1 / 5)
+}
 
 
 bspace();
