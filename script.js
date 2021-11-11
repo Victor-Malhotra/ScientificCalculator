@@ -1,7 +1,7 @@
 function bspace() {
     const bspacebk = documetn.getElementById('bspaceclick')
     const display = document.getElementById('result');
-    bspacebk.onkeydown = function() {
+    bspacebk.onkeydown = function(event) {
         var key = event.keyCode || event.charCode;
         if (key == 8) {
             //backspace pressed
